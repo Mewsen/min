@@ -1,6 +1,18 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://tews.dev/'
+languageCode = 'de-de'
+title = 'tews.dev'
+
+[params]
+[params.author]
+name = 'Michael Tews'
+title = 'Softwareentwickler'
+github = 'https://github.com/mewsen'
+pgp = 'A097DD3ACE709315A86D6EE10512FA62963CFD20'
+email = 'michael@tews.dev'
+
+[markup]
+[markup.highlight]
+noClasses = false
 
 [[menus.main]]
 name = 'Home'
@@ -12,12 +24,7 @@ name = 'Posts'
 pageRef = '/posts'
 weight = 20
 
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
-
 [module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.116.0"
+[module.hugoVersion]
+extended = false
+min = "0.116.0"

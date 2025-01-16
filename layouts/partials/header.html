@@ -1,2 +1,21 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="about">
+    <div>{{ site.Params.author.name}}</div>
+    <ul>
+        <li>
+            <div>{{ site.Params.author.title }}</div>
+        </li>
+        <li>
+            <a
+                href="https://keys.openpgp.org/vks/v1/by-fingerprint/{{site.Params.author.pgp}}"
+                target="_blank"
+                >{{site.Params.author.pgp}}</a
+            >
+        </li>
+        <li>
+            <a href="{{site.Params.author.github}}">GitHub</a>
+        </li>
+        <li>
+            <a href="mailto:{{site.Params.author.email}}">E-Mail</a>
+        </li>
+    </ul>
+</div>
